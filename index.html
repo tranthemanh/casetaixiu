@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tài Xỉu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Game Tài Xỉu</h1>
+    <div class="game-container">
+        <div class="betting-section">
+            <h2>Tài</h2>
+            <div class="bet-input">
+                <label for="bet-amount-tai">Số tiền cược:</label>
+                <input type="number" id="bet-amount-tai" min="1" max="1000" value="100">
+            </div>
+            <button id="bet-tai">Đặt cược Tài</button>
+            <div id="total-bet-tai">Tổng cược Tài: 0</div>
+        </div>
+        <div class="dice-section">
+            <div id="dice-container">
+                <img id="dice1" src="images/dice1.png" alt="Dice 1">
+                <img id="dice2" src="images/dice1.png" alt="Dice 2">
+                <img id="dice3" src="images/dice1.png" alt="Dice 3">
+            </div>
+            <div id="timer">Thời gian còn lại: 60 giây</div>
+        </div>
+        <div class="betting-section">
+            <h2>Xỉu</h2>
+            <div class="bet-input">
+                <label for="bet-amount-xiu">Số tiền cược:</label>
+                <input type="number" id="bet-amount-xiu" min="1" max="1000" value="100">
+            </div>
+            <button id="bet-xiu">Đặt cược Xỉu</button>
+            <div id="total-bet-xiu">Tổng cược Xỉu: 0</div>
+        </div>
+    </div>
+    <div id="balance">Số tiền hiện có: 1000</div>
+    <button id="add-money">Nạp tiền</button>
+    <div id="result"></div>
+
+    <button id="view-history">Xem Lịch Sử</button>
+    <div id="history" style="display: none;">
+        <h2>Lịch sử</h2>
+        <ul id="history-list"></ul>
+        <div id="history-controls">
+            <button id="prev-history">Previous</button>
+            <button id="next-history">Next</button>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
